@@ -1,7 +1,7 @@
-import MediaPlayer from './MediaPlayer'
-import AutoPlay from './plugins/AutoPlay'
-import AutoPause from './plugins/AutoPause'
-import Ads from './plugins/Ads'
+import MediaPlayer from '@plupyt/mediaplayer' //aqui era @plupyt/mediaplayer/MediaPlayer pero como MediaPlayer es el archivo principal del paquete en npm, no se pone
+import AutoPlay from '@plupyt/mediaplayer/lib/plugins/AutoPlay'
+import AutoPause from '@plupyt/mediaplayer/lib/plugins/AutoPause'
+import Ads from '@plupyt/mediaplayer/lib/plugins/Ads'
 
 const video = document.querySelector('video')
 const player = new MediaPlayer({ 

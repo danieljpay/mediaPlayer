@@ -17,5 +17,8 @@
   "browserlist": [
     "last 1 Firefox version"
   ],
-  "main": "index.js"
+  "main": "index.js",
+  "dependencies": {
+    "@plupyt/mediaplayer": "^1.0.0"
+  }
 }

@@ -35,7 +35,7 @@ async function precache() {
 async function cachedResponse(request) {
     const cache = await caches.open(VERSION)
     const response = await cache.match(request)
-    return response || fetch(request)
+    return response || fetch(request) //si response es undefined se hace el fetch(request)
 }
 
 async function updateCache(request) {
